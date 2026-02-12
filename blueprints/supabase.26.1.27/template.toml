@@ -7,6 +7,8 @@ secret_key_base = "${password:64}"
 vault_enc_key = "${password:32}"
 jwt_secret = "${password:32}"
 container_name_prefix = "${APP_NAME}-supabase"
+logflare_public_access_token = "${password:32}"
+logflare_private_access_token = "${password:32}"
 anon_key_payload = """{
   "role": "anon",
   "iss": "supabase",
