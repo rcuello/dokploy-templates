@@ -5,6 +5,7 @@ dashboard_password = "${password:32}"
 logflare_api_key = "${password:32}"
 secret_key_base = "${password:64}"
 vault_enc_key = "${password:32}"
+pg_meta_crypto_key = "${password:32}"
 jwt_secret = "${password:32}"
 container_name_prefix = "${APP_NAME}-supabase"
 logflare_public_access_token = "${password:32}"
@@ -61,6 +62,7 @@ env = [
 'DASHBOARD_PASSWORD=${dashboard_password}',
 'SECRET_KEY_BASE=${secret_key_base}',
 'VAULT_ENC_KEY=${vault_enc_key}',
+'PG_META_CRYPTO_KEY=${pg_meta_crypto_key}',
 '',
 '',
 '############',
